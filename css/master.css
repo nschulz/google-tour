@@ -1,0 +1,348 @@
+/* @group Reset */
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ * Edited by Nate Schulz
+ */
+
+html, body, div, span,
+h1, h2, h3, h4, p, img, 
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+ol, li, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+/* @end */
+
+/* @group Page Structure */
+
+/* @group Body Basics */
+body {
+    background: #fff;
+    color: #444;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+}
+.bodyContent {
+    padding: 30px 0;
+    overflow: hidden;
+}
+#footer {
+    background: #f1f1f1;
+    border-top: 1px solid #e5e5e5;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px;
+    color: #ccc;
+    text-align: center;
+}
+/* @end */
+/* @group User Navigation Bar */
+.globalNavigation {
+    background: #2d2d2d;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    padding: 0 18px;
+}
+.globalNavigation li {
+    display: inline-block;
+    font-weight: bold;
+}
+.globalNavigation a {
+    color: #bbb;
+    height: 30px;
+    padding: 0 7px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.globalNavigation span {
+    height: 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+/* @end */
+
+/* @group Branding Bar */
+.globalBrand {
+    height: 72px;
+    background: #f1f1f1;
+    border-bottom: 1px solid #e5e5e5;
+}
+#gLogoContainer {
+    float: left;
+}
+#gLogoContainer a {
+    background: url(resources/gLogo.png) no-repeat left;
+    display: block;
+    width: 132px;
+    height: 71px;
+    overflow: hidden;
+    line-height: 200px;
+    float: left;
+}
+.topic {
+    line-height: 71px;
+    text-shadow: 0 1px 0 white;;
+    font-size: 23px;
+    border-left: 1px solid #aaa;
+    padding: 5px 12px;
+}
+#optionsContainer {
+    float: right;
+    position: relative;
+    width: 150px;
+    -webkit-user-select: none;
+}
+.optionsBtn {
+    background: #ddd;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    display: block;
+    height: 30px;
+    padding: 0 20px;
+    line-height: 30px;
+    position: relative;
+    top: 20px;
+    float: right;
+    cursor: pointer;
+}
+.optionsView {
+    background: #fafafa;
+    border: 1px solid #aaa;
+    box-shadow: 0px 2px 5px rgba(50,50,50,0.2);
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+.optionsView li {
+    padding-left: 20px;
+}
+.pageHeader {
+    padding: 8px 0;
+}
+/* @end */
+/* @group Site Map*/
+.siteMap {
+    background: #f8f8f8;
+    overflow: hidden;
+}
+.siteMap li {
+    padding: 4px 0;
+}
+.siteMap a {
+    text-decoration: none;
+    color: #555;
+}
+.siteMap a:hover {
+    text-decoration: underline;
+}
+
+.siteMap .header a {
+    color: #15c;
+    font-size: 14px;
+}
+.tablet .sixCol {
+    width: 20%;
+}
+.mobile .sixCol {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.mobile .siteMap li a {
+    height: 30px;
+    display: block;
+}
+/* @end */
+/* @end */
+
+/* @group Typography */
+h2 {
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.blockquote {
+    margin: 30px 20%;
+}
+.strong {font-weight: bold;}
+.thin {font-weight: 100;}
+/* @end */
+
+/* @group Layout and Sizes */
+.maxWidthWrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.twoCol {
+    width: 48%;
+    float: left;
+}
+.sixCol {
+    width: 16%;
+    float: left;
+}
+.overflowHidden {
+    overflow: hidden;
+}
+.whiteSpaceBottom {
+    padding-bottom: 50px;
+}
+.right {float: right;}
+
+.center {text-align: center;}
+.medium {font-size: 18px;}
+.large {font-size: 26px;}
+.largest {font-size: 36px;}
+/* @end */
+
+/* @group Colors */
+.pageTopicColor {color:    #91959c;}
+.pageHeaderColor {color: #dd4b39;}
+.headlineTextColor {color: #444;}
+.actionTextColor {color: #15c;}
+/* @end */
+
+
+/* @group Page Specifics */
+
+.abstract {
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+.productFeature {
+    display: inline-block;
+    width: 19%;
+    padding: 0;
+    vertical-align: top;
+}
+.productFeature:hover .action {
+    text-decoration: underline;
+}
+.productFeature img {
+    max-width: 90%;
+}
+.productFeature .headline {
+    display: block;
+    font-size: 18px;
+    margin: 20px 10px;
+}
+.actionItems a {
+    padding: 20px 0;
+}
+.btt {
+    background: url(resources/icon-upArrow.gif) no-repeat right 30%;
+    color: #aaa;
+    padding-right: 10px;
+    float: right;
+    font-size: 12px;
+    overflow: hidden;
+    display: block;
+    width: 20px;
+    height: 30px;
+    line-height: 100px;
+}
+h2.withLogo {
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #444;
+    height: 70px;
+    padding-left: 75px;
+    line-height: 70px;
+}
+h2.withLogo .btt {
+    background-position: right bottom;
+    height: 65px;
+    line-height: 300px;
+}
+.eimg {
+    max-width: 665px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+.entry a {
+    color: #15c;
+}
+#title_groups {
+    background-image: url(../media/products/groups-64.png);
+}
+#title_news {
+    background-image: url(../media/products/news-64.png);
+}
+#title_toolbar {
+    background-image: url(../media/products/toolbar-64.png);
+}
+#title_images {
+    background-image: url(../media/products/images-64.gif);
+}
+#title_products {
+    background-image: url(../media/products/shopping-64.png);
+}
+#title_groups {
+    background-image: url(../media/products/groups-64.png);
+}
+#title_search {
+    background-image: url(../media/products/search-64.png);
+}
+#title_more {
+    background-image: url(../media/products/customsearch-64.png);
+}
+
+/* @end */
+
+/* @group Adaptive Overrides */
+.tablet .productFeature {
+    width: 32.5%;
+}
+.mobile .globalNavigation,
+.mobile #optionsContainer {
+    display: none;
+}
+.mobile .blockquote {
+    margin: 30px 5%;
+}
+.mobile .productFeature {
+    background: #f5f5f5;
+    border-radius: 3px;
+    margin: 5px 0;
+    width: auto;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    padding: 0 10px 0 0;
+}
+.mobile .productFeature img {
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+}
+/* @end */
